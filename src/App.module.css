@@ -1,0 +1,97 @@
+.skip {
+  position: absolute;
+  top: -100px;
+  left: 1rem;
+  z-index: 10;
+  padding: 0.5rem 1rem;
+  color: var(--bg);
+  background: var(--text);
+  border-radius: 8px;
+}
+
+.skip:focus {
+  top: 1rem;
+}
+
+.header {
+  background: var(--nasa-blue);
+}
+
+/* The default focus ring is too close to the header blue; white is 10:1. */
+.header :focus-visible {
+  outline-color: #fff;
+}
+
+.bar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem 1.5rem;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0.75rem 1rem;
+}
+
+.brand {
+  font-size: 1.25rem;
+  font-weight: 800;
+  letter-spacing: 0.02em;
+  color: #fff;
+  text-decoration: none;
+}
+
+.nav {
+  display: flex;
+  gap: 1.25rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.nav a {
+  display: inline-block;
+  padding: 0.25rem 0;
+  font-weight: 600;
+  color: #fff;
+  text-decoration: none;
+  border-bottom: 3px solid transparent;
+}
+
+.nav a:hover {
+  border-bottom-color: rgb(255 255 255 / 50%);
+}
+
+/* The current page is underlined (and marked aria-current by NavLink), not shown by color alone. */
+.nav a.active {
+  border-bottom-color: #fff;
+}
+
+.main {
+  flex: 1;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1.5rem 1rem 3rem;
+}
+
+/* <main> only receives focus from the skip link. It isn't a control, so it gets no ring. */
+.main:focus {
+  outline: none;
+}
+
+.notice,
+.alert {
+  padding: 0.75rem 1rem;
+  background: var(--surface);
+  border-left: 4px solid var(--nasa-red);
+  border-radius: 4px;
+}
+
+.footer {
+  padding: 1.5rem 1rem;
+  font-size: 0.875rem;
+  text-align: center;
+  color: var(--muted);
+  border-top: 1px solid var(--surface-2);
+}

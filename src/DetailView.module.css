@@ -1,0 +1,97 @@
+.topbar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem 1.5rem;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1.5rem;
+}
+
+.pager {
+  display: flex;
+  gap: 0.75rem;
+  align-items: center;
+}
+
+.step {
+  display: inline-flex;
+  gap: 0.4rem; /* flex layout drops plain spaces next to the arrows */
+  align-items: center;
+  min-height: 2.75rem;
+  padding: 0.5rem 1rem;
+  font-weight: 700;
+  color: var(--bg);
+  text-decoration: none;
+  background: var(--nasa-red);
+  border-radius: 8px;
+}
+
+.layout {
+  display: grid;
+  gap: 1.5rem;
+}
+
+@media (min-width: 900px) {
+  .layout {
+    grid-template-columns: minmax(0, 3fr) minmax(0, 2fr);
+    align-items: start;
+  }
+}
+
+/* A fixed 4:3 frame holds the space while the photo loads, so the text below doesn't jump. */
+.photo {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: contain;
+  background: var(--surface);
+  border-radius: var(--radius);
+}
+
+.heading {
+  margin-top: 0;
+  overflow-wrap: anywhere;
+}
+
+.facts {
+  display: grid;
+  grid-template-columns: max-content 1fr;
+  gap: 0.35rem 1rem;
+  margin: 0;
+}
+
+.facts dt {
+  color: var(--muted);
+}
+
+.facts dd {
+  margin: 0;
+  overflow-wrap: anywhere;
+}
+
+.keywords {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.keywords a {
+  display: inline-block;
+  padding: 0.2rem 0.65rem;
+  font-size: 0.875rem;
+  color: var(--text);
+  text-decoration: none;
+  background: var(--surface-2);
+  border: 1px solid var(--line);
+  border-radius: 999px;
+}
+
+.keywords a:hover {
+  border-color: var(--text);
+}
+
+.description {
+  white-space: pre-line;
+}
