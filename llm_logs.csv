@@ -1,0 +1,14 @@
+Read the MP2 requirements and explain what I need to build in simple words. Also give me a checklist based on the grading rubric.
+Look through my current project and tell me what is already done and what is still missing for MP2.
+I’m using the NASA API for this project. Help me plan the list view, gallery view, and details view before I start coding.
+Help me set up React Router for the list, gallery, and details pages. Make sure it will also work with GitHub Pages
+Help me connect to the NASA API using Axios and TypeScript. Add simple loading and make sure you add error handling too.
+Help me build the list view using the NASA data. I want a search bar that filters the results while I type, Add sorting with proper options.
+Improve the CSS and make the app look clean and responsive.
+Help me create the gallery view using NASA images. Make the images display nicely in a responsive grid.
+Add a simple filter to the gallery so I can filter the NASA results by an attribute from the API.
+Create a details page for each NASA item. Clicking an item from the list or gallery should open its details.
+Add Previous and Next buttons to the details page so I can move through the current results.
+Compare my finished app with the MP2 grading rubric and tell me if I’m missing anything. Fix any important issues you find.
+Check my project for any errors and other bugs. Run the build and tests and help me fix any errors.
+Help me deploy this project to GitHub Pages. After that, give me a simple 3-minute video demo plan that covers all the grading requirements.
